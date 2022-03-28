@@ -12,7 +12,7 @@ import {
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -24,7 +24,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="training" onClick={toggle}>
             Training
           </SidebarLink>
-          <SidebarLink to="success" onClick={toggle}>
+          <SidebarLink to="stories" onClick={toggle}>
             Success Stories
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>
