@@ -6,10 +6,10 @@ import InfoSection from "../components/InfoSection/InfoSection";
 import {
   homeAboutObj,
   homeTrainingObj,
-  homeSuccessObj,
   homeContactObj,
 } from "../components/InfoSection/InfoSectionData";
 import SuccessStories from "../components/SuccessStories/SuccessStories";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +25,9 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeAboutObj} />
       <InfoSection {...homeTrainingObj} />
-      {/* <InfoSection {...homeSuccessObj} /> */}
       <SuccessStories />
       <InfoSection {...homeContactObj} />
+      <Footer />
     </>
   );
 };
