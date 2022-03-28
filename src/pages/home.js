@@ -9,6 +9,7 @@ import {
   homeSuccessObj,
   homeContactObj,
 } from "../components/InfoSection/InfoSectionData";
+import SuccessStories from "../components/SuccessStories/SuccessStories";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,8 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeAboutObj} />
       <InfoSection {...homeTrainingObj} />
-      <InfoSection {...homeSuccessObj} />
+      {/* <InfoSection {...homeSuccessObj} /> */}
+      <SuccessStories />
       <InfoSection {...homeContactObj} />
     </>
   );
