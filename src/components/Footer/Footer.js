@@ -7,8 +7,8 @@ const Footer = () => {
     <Container>
       <SocialWrapper>
         <FooterSocial />
+        <Copyright>Eric Pauly &copy; {new Date().getFullYear()}</Copyright>
       </SocialWrapper>
-      <Copyright>Eric Pauly &copy; {new Date().getFullYear()}</Copyright>
     </Container>
   );
 };

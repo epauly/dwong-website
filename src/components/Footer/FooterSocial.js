@@ -4,17 +4,17 @@ import { SocialIcon } from "./FooterElements";
 
 const FooterSocial = () => {
   return (
-    <div>
+    <>
       <SocialIcon href="https://www.facebook.com">
         <FaFacebookSquare size={36} />
       </SocialIcon>
-      <SocialIcon href="https://www.linkedin.com">
+      <SocialIcon href="https://www.linkedin.com/in/davidson-wong-ma-cscs-1516391a">
         <FaLinkedin size={36} />
       </SocialIcon>
-      <SocialIcon href="https://www.instagram.com">
+      <SocialIcon href="https://www.instagram.com/dsonone">
         <FaInstagram size={36} />
       </SocialIcon>
-    </div>
+    </>
   );
 };
 

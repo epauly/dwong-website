@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  /* Test */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* End Test */
+
   padding: 80px, 60px;
   background: #010606;
   bottom: 0;
@@ -19,10 +25,10 @@ export const SocialIcon = styled.a`
   margin: 1rem 0.5rem;
   transition: transform 250ms;
   display: inline-block;
-  justify-content: center;
 
   &:hover {
     transform: translateY(-2px);
+    color: #fff;
   }
 `;
 
