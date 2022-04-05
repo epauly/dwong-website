@@ -42,8 +42,9 @@ const HeroSection = () => {
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            smooth={true}
+            duration={500}
           >
-            {/* Get Started {hover ? <ArrowForward /> : <ArrowRight />} */}
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

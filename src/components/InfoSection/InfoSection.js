@@ -43,7 +43,7 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrapper>
                   <Button
-                    to="home"
+                    to="home" // !! Add navigate to About page
                     smooth={true}
                     duration={500}
                     spy={true}
