@@ -1,17 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLinks,
-  NavBtn,
-  NavBtnLink,
-} from "./NavbarElements";
+import * as S from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -30,22 +20,22 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <Nav scrollNav={scrollNav}>
-        <NavbarContainer>
-          <NavLogo
+      <S.Nav scrollNav={scrollNav}>
+        <S.NavbarContainer>
+          <S.NavLogo
             to="/"
             onClick={() => {
               scroll.scrollToTop();
             }}
           >
             Davidson Wong
-          </NavLogo>
-          <MobileIcon onClick={toggle}>
+          </S.NavLogo>
+          <S.MobileIcon onClick={toggle}>
             <FaBars />
-          </MobileIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks
+          </S.MobileIcon>
+          <S.NavMenu>
+            <S.NavItem>
+              <S.NavLinks
                 to="about"
                 smooth={true}
                 duration={500}
@@ -55,10 +45,10 @@ const Navbar = ({ toggle }) => {
                 activeClass="active"
               >
                 About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
+              </S.NavLinks>
+            </S.NavItem>
+            <S.NavItem>
+              <S.NavLinks
                 to="training"
                 smooth={true}
                 duration={500}
@@ -67,10 +57,10 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Training
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
+              </S.NavLinks>
+            </S.NavItem>
+            <S.NavItem>
+              <S.NavLinks
                 to="stories"
                 smooth={true}
                 duration={500}
@@ -79,10 +69,10 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Success Stories
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
+              </S.NavLinks>
+            </S.NavItem>
+            <S.NavItem>
+              <S.NavLinks
                 to="contact"
                 smooth={true}
                 duration={500}
@@ -91,11 +81,11 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Contact
-              </NavLinks>
-            </NavItem>
-          </NavMenu>
-          <NavBtn>
-            <NavBtnLink
+              </S.NavLinks>
+            </S.NavItem>
+          </S.NavMenu>
+          <S.NavBtn>
+            <S.NavBtnLink
               to="/signin"
               smooth={true}
               duration={500}
@@ -104,10 +94,10 @@ const Navbar = ({ toggle }) => {
               offset={-80}
             >
               Sign In
-            </NavBtnLink>
-          </NavBtn>
-        </NavbarContainer>
-      </Nav>
+            </S.NavBtnLink>
+          </S.NavBtn>
+        </S.NavbarContainer>
+      </S.Nav>
     </>
   );
 };

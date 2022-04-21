@@ -1,11 +1,14 @@
 import React from "react";
+import * as S from "./SuccessStoriesElements";
+
+//!! FOR REFACTOR
 
 const StoriesCard = (props) => {
   return (
     <>
-      <StoriesIcon src={props.storyIcon} />
-      <StoriesH2>{props.storyH2}</StoriesH2>
-      <StoriesP>{props.storyP}</StoriesP>
+      <S.StoriesIcon src={props.storyIcon} />
+      <S.StoriesH2>{props.storyH2}</S.StoriesH2>
+      <S.StoriesP>{props.storyP}</S.StoriesP>
     </>
   );
 };

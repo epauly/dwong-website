@@ -1,50 +1,42 @@
 import React from "react";
 import StoryIcon1 from "../../images/dwong.jpg";
 // import StoriesCard from "./StoriesCard";
-import {
-  StoriesContainer,
-  StoriesH1,
-  StoriesWrapper,
-  StoriesCard,
-  StoriesIcon,
-  StoriesH2,
-  StoriesP,
-} from "./SuccessStoriesElements";
+import * as S from "./SuccessStoriesElements";
 
 const SuccessStories = () => {
   return (
     <>
-      <StoriesContainer id="stories">
-        <StoriesH1>Success Stories</StoriesH1>
-        <StoriesWrapper>
-          <StoriesCard>
+      <S.StoriesContainer id="stories">
+        <S.StoriesH1>Success Stories</S.StoriesH1>
+        <S.StoriesWrapper>
+          <S.StoriesCard>
             {/* !! REFACTOR INTO CARD COMPONENT */}
             {/* <StoriesCard storyIcon={storyIcon1} storyH2="Story H2" storyP="Story P"/> */}
-            <StoriesIcon src={StoryIcon1} />
-            <StoriesH2>Person Name</StoriesH2>
-            <StoriesP>
+            <S.StoriesIcon src={StoryIcon1} />
+            <S.StoriesH2>Person Name</S.StoriesH2>
+            <S.StoriesP>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna."
-            </StoriesP>
-          </StoriesCard>
-          <StoriesCard>
-            <StoriesIcon src={StoryIcon1} />
-            <StoriesH2>Person Name</StoriesH2>
-            <StoriesP>
+            </S.StoriesP>
+          </S.StoriesCard>
+          <S.StoriesCard>
+            <S.StoriesIcon src={StoryIcon1} />
+            <S.StoriesH2>Person Name</S.StoriesH2>
+            <S.StoriesP>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            </StoriesP>
-          </StoriesCard>
-          <StoriesCard>
-            <StoriesIcon src={StoryIcon1} />
-            <StoriesH2>Person Name</StoriesH2>
-            <StoriesP>
+            </S.StoriesP>
+          </S.StoriesCard>
+          <S.StoriesCard>
+            <S.StoriesIcon src={StoryIcon1} />
+            <S.StoriesH2>Person Name</S.StoriesH2>
+            <S.StoriesP>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            </StoriesP>
-          </StoriesCard>
-        </StoriesWrapper>
-      </StoriesContainer>
+            </S.StoriesP>
+          </S.StoriesCard>
+        </S.StoriesWrapper>
+      </S.StoriesContainer>
     </>
   );
 };

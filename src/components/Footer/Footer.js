@@ -1,15 +1,15 @@
 import React from "react";
-import { Container, Copyright, SocialWrapper } from "./FooterElements";
+import * as S from "./FooterElements";
 import FooterSocial from "./FooterSocial";
 
 const Footer = () => {
   return (
-    <Container>
-      <SocialWrapper>
+    <S.Container>
+      <S.SocialWrapper>
         <FooterSocial />
-        <Copyright>Eric Pauly &copy; {new Date().getFullYear()}</Copyright>
-      </SocialWrapper>
-    </Container>
+        <S.Copyright>Eric Pauly &copy; {new Date().getFullYear()}</S.Copyright>
+      </S.SocialWrapper>
+    </S.Container>
   );
 };
 

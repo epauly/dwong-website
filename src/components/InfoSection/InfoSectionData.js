@@ -26,7 +26,7 @@ export const homeTrainingObj = {
   headline: "Workouts Designed For You",
   description:
     "Get access to personalized training designed to meet your needs.",
-  buttonLabel: "Get Started",
+  buttonLabel: "Training Programs",
   imgStart: true,
   img: require("../../images/svg-planner.svg").default,
   alt: "runner",

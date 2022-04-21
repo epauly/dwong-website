@@ -1,19 +1,6 @@
 import React from "react";
 import { Button } from "../Button/ButtonElements";
-import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  BtnWrapper,
-  Column2,
-  ImgWrap,
-  Img,
-} from "./InfoElements";
+import * as S from "./InfoElements";
 
 const InfoSection = ({
   lightBg,
@@ -33,17 +20,17 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrapper>
+      <S.InfoContainer lightBg={lightBg} id={id}>
+        <S.InfoWrapper>
+          <S.InfoRow imgStart={imgStart}>
+            <S.Column1>
+              <S.TextWrapper>
+                <S.TopLine>{topLine}</S.TopLine>
+                <S.Heading lightText={lightText}>{headline}</S.Heading>
+                <S.Subtitle darkText={darkText}>{description}</S.Subtitle>
+                <S.BtnWrapper>
                   <Button
-                    to="home" // !! Add navigate to About page
+                    to="#" // !! Add navigate to appropriate pages
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -55,17 +42,17 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrapper>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+                </S.BtnWrapper>
+              </S.TextWrapper>
+            </S.Column1>
+            <S.Column2>
+              <S.ImgWrap>
+                <S.Img src={img} alt={alt} />
+              </S.ImgWrap>
+            </S.Column2>
+          </S.InfoRow>
+        </S.InfoWrapper>
+      </S.InfoContainer>
     </>
   );
 };

@@ -1,13 +1,10 @@
 import React from "react";
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SocialIcon } from "./FooterElements";
 
 const FooterSocial = () => {
   return (
     <>
-      <SocialIcon href="https://www.facebook.com">
-        <FaFacebookSquare size={36} />
-      </SocialIcon>
       <SocialIcon href="https://www.linkedin.com/in/davidson-wong-ma-cscs-1516391a">
         <FaLinkedin size={36} />
       </SocialIcon>

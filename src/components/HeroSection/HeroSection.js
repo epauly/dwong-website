@@ -1,17 +1,7 @@
 import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
 import { Button } from "../Button/ButtonElements";
-import {
-  HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
-} from "./HeroElements";
+import * as S from "./HeroElements";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -21,9 +11,9 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer id="home">
-      <HeroBg>
-        <VideoBg
+    <S.HeroContainer id="home">
+      <S.HeroBg>
+        <S.VideoBg
           autoPlay
           loop
           muted
@@ -31,11 +21,11 @@ const HeroSection = () => {
           src={Video}
           type="video/mp4"
         />
-      </HeroBg>
-      <HeroContent>
-        <HeroH1>Davidson Wong Fitness</HeroH1>
-        <HeroP>Fitness training specialized for you.</HeroP>
-        <HeroBtnWrapper>
+      </S.HeroBg>
+      <S.HeroContent>
+        <S.HeroH1>Davidson Wong Fitness</S.HeroH1>
+        <S.HeroP>Fitness training specialized for you.</S.HeroP>
+        <S.HeroBtnWrapper>
           <Button
             to="contact"
             onMouseEnter={onHover}
@@ -45,11 +35,11 @@ const HeroSection = () => {
             smooth={true}
             duration={500}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get Started {hover ? <S.ArrowForward /> : <S.ArrowRight />}
           </Button>
-        </HeroBtnWrapper>
-      </HeroContent>
-    </HeroContainer>
+        </S.HeroBtnWrapper>
+      </S.HeroContent>
+    </S.HeroContainer>
   );
 };
 
