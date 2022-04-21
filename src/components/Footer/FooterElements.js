@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   /* Test */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* End Test */
@@ -15,16 +16,19 @@ export const Container = styled.div`
   @media screen and (max-width: 1000px) {
     padding: 70px 30px;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 0px 20px;
+  }
 `;
 
 export const SocialWrapper = styled.div`
-  padding: 25px, 25px;
+  display: flex;
 `;
 
 export const SocialIcon = styled.a`
   margin: 1rem 0.5rem;
   transition: transform 250ms;
-  display: inline-block;
 
   &:hover {
     transform: translateY(-2px);
@@ -32,13 +36,17 @@ export const SocialIcon = styled.a`
   }
 `;
 
+export const CopyrightWrapper = styled.div`
+  display: flex;
+`;
+
 export const Copyright = styled.p`
   color: #fff;
   opacity: 0.5;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   @media screen and (max-width: 480px) {
     font-size: 16px;

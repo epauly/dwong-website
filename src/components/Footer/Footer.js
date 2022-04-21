@@ -7,8 +7,10 @@ const Footer = () => {
     <S.Container>
       <S.SocialWrapper>
         <FooterSocial />
-        <S.Copyright>Eric Pauly &copy; {new Date().getFullYear()}</S.Copyright>
       </S.SocialWrapper>
+      <S.CopyrightWrapper>
+        <S.Copyright>Eric Pauly &copy; {new Date().getFullYear()}</S.Copyright>
+      </S.CopyrightWrapper>
     </S.Container>
   );
 };
